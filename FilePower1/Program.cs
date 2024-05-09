@@ -26,7 +26,7 @@ namespace FilePower1
             for (int i = 0; i < size; i++)
             {
                 fileText += wordsTyped.Dequeue();
-                if (i != size-1)
+                if (i != size)
                     fileText += "\n";
             }
             File.WriteAllText(path,fileText);
