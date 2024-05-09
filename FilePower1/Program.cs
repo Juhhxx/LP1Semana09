@@ -8,7 +8,6 @@ namespace FilePower1
     {
         static void Main(string[] fileName)
         {
-            Console.WriteLine("START");
             Queue<string> wordsTyped = new Queue<string>();
             string userInput = null;
             string path = Path.Combine("FilePower1",fileName[0]);
