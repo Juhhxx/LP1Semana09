@@ -46,7 +46,7 @@ namespace IntCollections
             
             return colString;
         }
-        private static string PrintCollection(string name, Stack<int> stack)
+        private static string PrintCollection(string name, Stack<int> stack)  
         {
             string colString = $"{name}: ";
             int size = stack.Count;
