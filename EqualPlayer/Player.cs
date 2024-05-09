@@ -12,7 +12,10 @@ namespace EqualPlayer
             PClass = pClass;
             Name = name;
         }
-
+        public override int GetHashCode()
+        {
+            return PClass.GetHashCode() ^ Name.GetHashCode();
+        }
         
     }
 }
