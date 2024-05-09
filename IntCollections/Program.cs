@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.VisualBasic;
 
 namespace IntCollections
 {
@@ -22,6 +23,25 @@ namespace IntCollections
                 queueTest.Append(n);
                 setTest.Add(n);
             }
+
+            Console.WriteLine(PrintCollection("List",listTest));
+        }
+        private static string PrintCollection(string name, IEnumerable<int> collection)
+        {
+            string colString = $"{name}: ";
+            int indexCounter = 0;
+
+            foreach (int i in collection)
+            {
+                if (indexCounter < collection.Count()-1) 
+                    colString += $"{i}, ";
+                else 
+                    colString += $"{i}";
+                
+                indexCounter++;
+            }
+            
+            return colString;
         }
     }
 }
