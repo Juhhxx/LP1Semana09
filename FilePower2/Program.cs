@@ -7,7 +7,6 @@ namespace FilePower2
     {
         static void Main(string[] fileName)
         {
-            Console.WriteLine("START");
             string userInput = null;
             string path = Path.Combine("FilePower2",fileName[0]);
             using StreamWriter sw = new StreamWriter(path);
