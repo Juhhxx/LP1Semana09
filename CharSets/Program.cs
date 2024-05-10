@@ -38,7 +38,24 @@ namespace CharSets
                 }
             }
             
-           
+            foreach (HashSet<char> hash in filesContent)
+            {
+                filesContent[0].IntersectWith(hash);
+            }
+
+            List<char> finalList = new List<char>();
+
+            foreach (char c in filesContent[0])
+            {
+                finalList.Add(c);
+            }
+
+            finalList.Sort();
+
+            foreach (char c in finalList)
+            {
+                Console.WriteLine(c);
+            }
         }
     }
 }
