@@ -10,7 +10,7 @@ namespace FilePower1
         {
             Queue<string> wordsTyped = new Queue<string>();
             string userInput = null;
-            string path = Path.Combine("FilePower1",fileName[0]);
+            string path = Path.Combine(fileName[0]);
 
             do
             {
